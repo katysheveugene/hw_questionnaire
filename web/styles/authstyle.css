@@ -1,0 +1,86 @@
+@import "animation.css";
+#zoomIn {
+    animation-name: zoomIn;
+    animation-duration: 0.6s;
+}
+
+body {
+    background:url("/images/mainbg.jpg") space;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    display: inline-flex;
+    justify-content:center;
+    width: 33%;
+    height: 33%;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 12% auto 0;
+    border: #cc0000 2px;
+    border-radius: 25px;
+    border-style: none solid;
+    background: url("/images/bgauth.png") round;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    padding: 1% 0;
+    margin: auto;
+}
+
+.items input{
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3em;
+    border-color:#cc0000;
+    border-radius: 4px;
+    margin: 1.5% auto;
+    padding: 0 10px;
+}
+
+.items h2{
+    height: 40px;
+    padding: 0;
+    margin: 1.5% auto;
+    color: rgb(242, 242, 242) ;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-shadow: 0 0 1px white;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
+}
+
+.items button{
+    width: 40%;
+    height: 45px;
+    padding: 0;
+    margin: 1.5% auto;
+    background-color:rgb(242, 242, 242);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: black 1px solid;
+    border-radius:5px;
+    box-shadow:0 2px 2px rgba(0,0,0,0.2);
+
+}
+
+.items button:hover {
+    background-color: #cc0000;
+    color: rgb(242, 242, 242);
+    text-shadow: black 0 0 2px;
+    animation-name: pulse;
+    animation-duration: 0.3s;
+}
+
+
+
